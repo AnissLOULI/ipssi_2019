@@ -1,0 +1,670 @@
+    1  ping 8.8.8.8
+    2  su
+    3  ls
+    4  ls -lrt
+    5  ls -lrt | tail -2
+    6  ls -lrt | head -2
+    7  ls -lrt | head -3
+    8  CD DOCUMENTS
+    9  cd documents
+   10  ls
+   11  cd ..
+   12  ls
+   13  cd aniss
+   14  ls
+   15  cd Documents
+   16  nano a
+   17  nano b
+   18  ls
+   19  nano a
+   20  ls
+   21  nano b
+   22  ls
+   23  mkdir test
+   24  ls
+   25  ls -lrt | head -1
+   26  ls -lrt | head -2
+   27  ls -lrt | tail -2
+   28  ls -lrt 
+   29  cd /tmp
+   30  ls
+   31  ls -lrt 
+   32  cd ..
+   33  ls
+   34  cd ..
+   35  ls
+   36  cd home
+   37  ls
+   38  cd aniss/
+   39  ls
+   40  cd Documents/
+   41  ls
+   42  vim
+   43  cd /bin
+   44  ls
+   45  cd
+   46  ls
+   47  id
+   48  cd Documents/
+   49  ls
+   50  ls -rt | tail-2 | xargs -i echo "{}" /Documents/test
+   51  ls -rt | tail -2 | xargs -i echo "{}" /Documents/test
+   52  ls
+   53  cd test/
+   54  ls
+   55  cd .
+   56  cd ..
+   57  ls
+   58  ls -rt | tail -2 | xargs -i echo "{}" /Documents/test
+   59  nano x
+   60  nano y
+   61  ls -rt | tail -2 | xargs -i echo "{}" /Documents/test
+   62  ls -rt | tail -2 | xargs -i echo mv "{}" /Documents/test
+   63  ls -rt | tail -2 | xargs -i echo mv -v "{}" /Documents/test
+   64  ls -rt | tail -2 | xargs -i echo mv -v "{}" /Documents/test | sh
+   65  ls
+   66  ls -rt | tail -2 | xargs -i echo mv -v '{}' /Documents/test | sh
+   67  ls -rt | tail -2 | xargs -i echo mv -v '{}' /Documents/test/. | sh
+   68  cd .
+   69  ls
+   70  cd ..
+   71  ls -rt | tail -2 | xargs -i echo mv -v '{}' 
+   72  cd Documents/
+   73  ls
+   74  ls -rt | tail -2 | xargs -i echo mv -v '{}' /test | sh
+   75  su
+   76  ls -rt | tail -2 | xargs -i echo mv -v '{}' /test | sh
+   77  ls
+   78  cd Documents/
+   79  ls
+   80  cd test/
+   81  ls
+   82  ps -elf
+   83  ps -htop
+   84  htop
+   85  apt-get htop
+   86  apt-get install htop
+   87  su
+   88  ps a
+   89  ps -axf
+   90  free -h
+   91  free -top
+   92  top
+   93  ls
+   94  cd D
+   95  cd Documents/
+   96  cd test/
+   97  ls
+   98  ls -l /bin | more
+   99  ls > /tmp/ls.log
+  100  cat /etc/password
+  101  cat /etc/password | more
+  102  echo bonjour | rev
+  103  man wc
+  104  bonjour | wc
+  105  echo bonjour | wc
+  106  echo $?
+  107  ls > /tmp/ls.log
+  108  echo $?
+  109  cat /etc/password
+  110  echo $?
+  111  ls /d
+  112  ls /sdfsdf 2> /tmp/ls_err.log
+  113  echo $?
+  114  su
+  115  cat /etc/passwd
+  116  cat /etc/passwd | cut -d: -f1
+  117  cat /etc/passwd | cut -d: -f6
+  118  cat /etc/passwd | cut -d: -f7
+  119  cat /etc/passwd | cut -d: -f6 -f7
+  120  cat /etc/passwd | cut -d: -f6,f7
+  121  cat /etc/passwd | cut -d: -f(6,7)
+  122  cat /etc/passwd | cut -d: -f(6:7)
+  123  cat /etc/passwd | cut -d: -f6 | cut -d: -f7
+  124  cat /etc/passwd | cut -d: -f6
+  125  cat /etc/passwd | cut -d: -f6:-f7
+  126  cut --h
+  127  cat /etc/passwd | cut -d: -f6-f7
+  128  cat /etc/passwd | cut -d: -f6 -f7
+  129  cat /etc/passwd | cut -d: -f
+  130  cat /etc/passwd | cut -d: -f6-7
+  131  wget 192.1168.22.13:7777/a.log
+  132  wget 192.168.22.13:7777/a.log
+  133  ls
+  134  nano a.log
+  135  cat a.log | cut -d: -f1
+  136  cat a.log | cut -d- - -f1
+  137  cat a.log | cut -d- -f1
+  138  cat a.log | cut -d- -f1 | sort
+  139  cat a.log | cut -d- -f1 | sort | unik
+  140  cat a.log | cut -d- -f1 | sort | uniq
+  141  cat a.log | cut -d- -f1 | sort -u
+  142  cat a.log | cut -d- -f1 | sort -n -u
+  143  cat a.log | cut -d- -f1 | sort -n -u | wc -l
+  144  cat a.log | cut -d- -f1 | sort -u -n | wc -l
+  145  cat a.log | cut -d- -f1 | sort -u -n | wc
+  146  cat a.log | cut -d- -f1 | sort -n -u | wc -l
+  147  cat a.log | cut -d- -f1 | sort -n -u | wc 
+  148  cat a.log | cut -d- -f1 | sort -n -u -c | wc 
+  149  cat a.log | cut -d- -f1 | sort -n -u -c
+  150  cat a.log | cut -d- -f1 | sort -n -u
+  151  cat a.log | cut -d- -f1 | sort -u
+  152  cat a.log | cut -d- -f1 | sort -u -n
+  153  cat a.log | cut -d- -f1 | sort -u | sort -n
+  154  cat a.log | cut -d- -f1 | sort -u | sort -n | wc -l
+  155  cat a.log | cut -d- -f2
+  156  cat a.log | cut -d- -f3
+  157  cat a.log | cut -d  -f3
+  158  cat a.log | cut -d" -f1
+  159  cat a.log | cut -d" " -f2
+  160  cat a.log | cut -d" " -f3
+  161  cat a.log | cut -d" " -f4
+  162  cat a.log | cut -d" " -f5
+  163  cat a.log | cut -d" " -f6
+  164  cat a.log | cut -d" -f6
+  165  cat a.log | cut -d" -f7
+  166  cat a.log | cut -d" " -f7
+  167  cat a.log | cut -d" " -f7 | sort -u
+  168  head a.log
+  169  cat a.log | cut -d" " -f6 | sort -u
+  170  cat a.log | cut -d" " -f7 | sort -u
+  171  cat a.log | cut -d" " -f7 
+  172  cat a.log | cut -d" " -f7 | uniq
+  173  cat a.log | cut -d" " -f7 | uniq | sort -d
+  174  cat a.log | cut -d" " -f7 | uniq -c | sort -d
+  175  cat a.log | cut -d" " -f7 | uniq -c 
+  176  cat a.log | cut -d" " -f7 | uniq -c | sort -n
+  177  cat a.log | cut -d" " -f7 | sort | uniq -c | sort -n
+  178  cat a.log | cut -d" " -f7 | uniq -c | sort -n
+  179  cat a.log | cut -d" " -f7 | sort | uniq -c | sort -n
+  180  cat a.log | cut -d" " -f7 | uniq -c | sort -n
+  181  cat a.log | cut -d" " -f7 | uniq -c | head
+  182  cat a.log | cut -d" " -f7 | head
+  183  cat a.log | cut -d" " -f7 | sort | uniq -c | sort -n
+  184  head a.log
+  185  cat a.log | cut -d" " -f-2 | sort | uniq -c | sort -n
+  186  cat a.log | cut -d" " -f--2 | sort | uniq -c | sort -n
+  187  cat a.log | cut -d" " -f14 | sort | uniq -c | sort -n
+  188  cat a.log | cut -d" " -f15 | sort | uniq -c | sort -n
+  189  head a.log
+  190  cat a.log | cut -d" " -f16 | sort | uniq -c | sort -n
+  191  cat a.log | awk 
+  192  cat a.log | cut -d  -f15awk | sort | uniq -c | sort -n
+  193  awk -h
+  194  awk
+  195  man awk
+  196  cat a.log | awk'(print $(NF-1))'
+  197  cat a.log | awk '(print $(NF-1))'
+  198  cat a.log | awk '{print $(NF-1)}'
+  199  cat a.log | awk '{print $(NF1)}'
+  200  cat a.log | awk '{print $(1)}'
+  201  cat a.log | awk '{print $(NF)}'
+  202  cat a.log | awk '{print $(NF-1)}'
+  203  cat a.log | awk '{print $(NF-1)}' |sort |uniq
+  204  cat a.log | awk '{print $(NF-1)}' |sort |uniq |sort -n
+  205  cat a.log | awk '{print $(NF-1)}' |sort |uniq |sort -n |head
+  206  cat a.log | awk '{print $(NF-1)}' |sort |uniq |sort -n |head -1
+  207  cat a.log | awk '{print $(NF-1)}' |sort |uniq |sort -n |head -2
+  208  cat a.log | awk '{print $(NF-1)}' |sort |uniq |sort -n |head c-2
+  209  cat a.log | awk '{print $(NF-1)}' |sort |uniq |sort -n |head -c -2
+  210  cat a.log | awk '{print $(NF-1)}' |sort |uniq |sort -n |head -c-2
+  211  cat a.log | awk '{print $(NF-1)}' |sort |uniq |sort -n |head -2
+  212  cat a.log | awk '{print $(NF-1)}' |sort |uniq |sort -n |tail -1
+  213  cat a.log | awk '{print $(NF-1)}' |sort |uniq |sort -n |head -n 2
+  214  cat a.log | awk '{print $(NF-2)}' |sort |uniq |sort -n |head -2
+  215  cat a.log | awk '{print $(NF-2)}' |sort |uniq |sort -n |tail -1
+  216  cat a.log | awk '{print $(NF-1)}' |sort |uniq |sort -n |head -2ccze
+  217  cat a.log | awk '{print $(NF-1)}' |sort |uniq |sort -n |tail -1
+  218  cat a.log | awk '{print $(NF-1)}' |sort |uniq |sort -n |head -2 |tail -1
+  219  cat a.log | awk '{print $(NF-1)}' |sort |uniq |sort -n |tail -1
+  220  cat a.log | awk '{print $(NF-1,3)}' |sort |uniq |sort -n |tail -1
+  221  cat a.log | awk '{print $(NF-1-3)}' |sort |uniq |sort -n |tail -1
+  222  cat a.log | awk '{print $(NF-1)}' |sort |uniq |sort -n |tail -1
+  223  grep 8.576 a.log
+  224  ccze a.log | head
+  225  apt-get ccze
+  226  su 
+  227  su
+  228  ccze a.log | head
+  229  ccze a.log 
+  230  ls
+  231  ccze -h
+  232  ccze -help
+  233  ccze --help
+  234  ccze a.log
+  235  ccze -a.log
+  236  ccze /a.log
+  237  ccze ~/Documents/test/a.log
+  238  cat a.log ccze
+  239  cat a.log |ccze
+  240  cat a.log |ccze | head
+  241  cat a.log |ccze | awk '{print $(NF-1)}' |sort |uniq |sort -n |tail -1
+  242  cat a.log | awk '{print $(NF-1)}' |sort |uniq |sort -n |tail -1
+  243  cat a.log | awk '{print $(NF-1)}' |sort |uniq |sort -n |head -2
+  244  cat a.log | awk '{print $(NF-1)}' |sort |uniq |sort -n |head -2 |ccze
+  245  cat a.log | awk '{print $(NF-1)}' |sort |uniq |sort -n |head -2 
+  246  vim a.log
+  247  su
+  248  ls
+  249  cd /bin
+  250  cd/bash
+  251  cd /bash
+  252  ls
+  253  cd bash/
+  254  cd /bash
+  255  cd /bin/bash
+  256  su
+  257  ls
+  258  cd Documents/
+  259  nano del.sh
+  260  bash del.sh
+  261  ls
+  262  nano del.sh
+  263  bash del.sh
+  264  su
+  265  ls
+  266  cd Documents/
+  267  ls
+  268  cd test/
+  269  ls
+  270  cd Documents/test/rendu/exo1
+  271  nano heure1.sh 
+  272  heure1.sh
+  273  bash heure1.sh 
+  274  nano heure1.sh 
+  275  su
+  276  cd Documents/test/rendu/exo08
+  277  nano sum200.sh 
+  278  cd ..
+  279  cd exo09
+  280  nano mean200.sh 
+  281  ls
+  282  cd Documents/
+  283  mkdir -p gits
+  284  cd gits/
+  285  git clone git@github.com:AnissLOULI/Test.git
+  286  sudo apt install git
+  287  su
+  288  git clone git@github.com:AnissLOULI/Test.git
+  289  ls
+  290  cd Test/
+  291  ls
+  292  nano README.md 
+  293  ls
+  294  git status 
+  295  git diff
+  296  git commit README.md 
+  297  git config -g
+  298  git commit README.md 
+  299  git config -g user.email "aniss.louli@hotmail.fr"
+  300  git config --global user.email "aniss.louli@hotmail.fr"
+  301  git config --global user.name "AnissLOULI"
+  302  git commit README.md 
+  303  git log
+  304  git push
+  305  nano test.sh
+  306  git push
+  307  git status
+  308  git add test.sh 
+  309  git push
+  310  git status
+  311  git commit -m 'ass test.sh'
+  312  git commit -m 'add test.sh'
+  313  git log
+  314  git push test.sh
+  315  git push
+  316  mkdir rendu
+  317  cd rendu/
+  318  nano heure1.sh
+  319  heure1.sh
+  320  bash heure1.sh
+  321  date
+  322  bash heure1.sh
+  323  nano heure1.sh
+  324  bash heure1.sh
+  325  nano heure1.sh
+  326  bash heure1.sh
+  327  nano heure1.sh
+  328  bash heure1.sh
+  329  ls
+  330  mkdir exo1
+  331  mv heure1.sh exo1
+  332  ls
+  333  cd exo1/
+  334  ls
+  335  cd rendu
+  336  cd ..
+  337  mkdir exo2
+  338  cd exo2
+  339  nano heure2.sh
+  340  cd..
+  341  cd ..
+  342  cd exo2
+  343  nano heure2.sh 
+  344  bash heure2.sh 
+  345  cd ..
+  346  mkdir exo3
+  347  mkdir exo4
+  348  mkdir exo5
+  349  mkdir exo6
+  350  mkdir exo7
+  351  mkdir exo8
+  352  mkdir exo9
+  353  mkdir exo10
+  354  cd exo3
+  355  nano cd.sh
+  356  bash cd.sh 
+  357  nano cd.sh
+  358  bash cd.sh 
+  359  ls
+  360  nano cd.sh
+  361  bash cd.sh ex
+  362  ls
+  363  cd ex
+  364  cd ..
+  365  nano cd.sh
+  366  bash cd.sh ex2
+  367  nano cd.sh
+  368  bash cd.sh ex2
+  369  bash cd.sh ex3
+  370  ls
+  371  rm ex
+  372  rmdir ex
+  373  rmdir ex2
+  374  rmdir ex3
+  375  rmdir exemple
+  376  cd.sh ex2
+  377  bash cd.sh ex
+  378  nano cd.sh
+  379  ls
+  380  bash cd.sh ex2
+  381  ls
+  382  bash cd.sh ex3
+  383  nano cd.sh
+  384  bash cd.sh ex4
+  385  cd ex4
+  386  ls
+  387  cd ..
+  388  ls
+  389  rmdir ex
+  390  rmdir ex2
+  391  rmdir ex3
+  392  rmdir ex4
+  393  cd ..
+  394  cpdir exo1 exo01
+  395  cp exo1 exo01
+  396  cp -r exo1 exo01
+  397  ls
+  398  cp -r exo2 exo21
+  399  cp -r exo2 exo2
+  400  cp -r exo2 exo02
+  401  cp -r exo3 exo03
+  402  ls
+  403  rmdir exo10
+  404  rmdir exo21
+  405  rmdir exo4
+  406  rmdir exo5
+  407  rmdir exo6
+  408  rmdir exo7
+  409  rmdir exo8
+  410  rmdir exo9
+  411  ls
+  412  rm exo1
+  413  rm -r exo1
+  414  rm -r exo2
+  415  rm -r exo3
+  416  rm -r exo21
+  417  ls
+  418  mkdir exo04
+  419  cd exo04
+  420  nano verification.sh
+  421  bash verification.sh
+  422  nano verification.sh
+  423  bash verification.sh
+  424  ls
+  425  nano efface_moi
+  426  ls
+  427  nano efface_moi
+  428  ls
+  429  bash verification.sh
+  430  ls
+  431  cd ..
+  432  cd exo05
+  433  ls
+  434  mkdir exo05
+  435  mkdir exo06
+  436  mkdir exo07
+  437  mkdir exo08
+  438  mkdir exo09
+  439  mkdir exo10
+  440  cd exo05
+  441  nano test_curl.sh
+  442  bash test_curl.sh www.google.com
+  443  nano test_curl.sh
+  444  bash test_curl.sh www.google.com
+  445  nano test_curl.sh
+  446  bash test_curl.sh www.google.com
+  447  ./test_curl.sh www.google.com
+  448  chmod 0755 test_curl.sh 
+  449  ./test_curl.sh www.google.com
+  450  nano test_curl.sh
+  451  curl
+  452  sudo apt-get curl
+  453  cd ..
+  454  cd exo06
+  455  nano historique.sh
+  456  bash historique.sh 
+  457  nano historique.sh
+  458  bash historique.sh 
+  459  history 
+  460  bash historique.sh 
+  461  nano historique.sh
+  462  bash historique.sh 
+  463  history | tail -n 10
+  464  nano historique.sh
+  465  ./affiche_histo.sh
+  466  . ./historique.sh 
+  467  ls
+  468  cd ..
+  469  cd exo07
+  470  nano add.sh
+  471  bash add.sh 1 2
+  472  nano add.sh
+  473  bash add.sh 1 2
+  474  nano add.sh
+  475  bash add.sh 1 2
+  476  nano add.sh
+  477  bash add.sh 1 2
+  478  cd ..
+  479  cd exo08
+  480  nano sum200.sh
+  481  bash sum200.sh
+  482  nano sum200.sh
+  483  bash sum200.sh
+  484  nano sum200.sh
+  485  bash sum200.sh
+  486  nano sum200.sh
+  487  bash sum200.sh
+  488  nano sum200.sh
+  489  bash sum200.sh
+  490  nano sum200.sh
+  491  bash sum200.sh
+  492  nano sum200.sh
+  493  bash sum200.sh
+  494  nano sum200.sh
+  495  bash sum200.sh
+  496  nano sum200.sh
+  497  bash sum200.sh
+  498  nano sum200.sh
+  499  bash sum200.sh
+  500  nano sum200.sh
+  501  bash sum200.sh
+  502  nano sum200.sh
+  503  bash sum200.sh
+  504  nano sum200.sh
+  505  bash sum200.sh
+  506  for i in {0,200};do echo$i;done | ./sum200.sh
+  507  for i in {0..200};do echo$i;done | ./sum200.sh
+  508  for i in {0..200};do echo $i;done | ./sum200.sh
+  509  chmod 755 ./sum200.sh
+  510  for i in {0..200};do echo $i;done | ./sum200.sh
+  511  ls
+  512  cd ..
+  513  ls
+  514  cd exo09
+  515  nano mean200.sh
+  516  for i in {0..200};do echo $i;done | ./mean200.sh
+  517  chmod 755 ./mean200.sh 
+  518  for i in {0..200};do echo $i;done | ./mean200.sh
+  519  nano mean200.sh
+  520  for i in {0..200};do echo $i;done | ./mean200.sh
+  521  nano mean200.sh
+  522  for i in {0..200};do echo $i;done | ./mean200.sh
+  523  nano mean200.sh
+  524  for i in {0..200};do echo $i;done | ./mean200.sh
+  525  nano mean200.sh
+  526  for i in {0..200};do echo $i;done | ./mean200.sh
+  527  nano mean200.sh
+  528  ls
+  529  cd ..
+  530  cd exo10
+  531  nano mean_sum200.sh
+  532  for i in {0..200};do echo $i;done | ./mean_sum200.sh
+  533  chmod 755 ./mean_sum200.sh
+  534  for i in {0..200};do echo $i;done | ./mean_sum200.sh
+  535  cd ..
+  536  ls
+  537  ls -l
+  538  cd ..
+  539  tar zcvf aniss_louli_05-11-2019.tar.gz rendu
+  540  ls
+  541  cp aniss_louli_05-11-2019.tar.gz aniss_louli_2019-11-05.tar.gz
+  542  ls
+  543  mv aniss_louli_05-11-2019.tar.gz 
+  544  rm aniss_louli_05-11-2019.tar.gz 
+  545  ls
+  546  cd rendu/
+  547  ls
+  548  cp exo01 ex01
+  549  mv exo01 ex01
+  550  ls
+  551  mv exo02 ex2
+  552  mv exo03 ex3
+  553  mv exo04 ex4
+  554  mv exo05 ex5
+  555  mv exo06 ex6
+  556  mv exo07 ex7
+  557  mv exo08 ex8
+  558  mv exo02 ex02
+  559  mv ex2 ex02
+  560  mv ex3 ex03
+  561  mv ex4 ex04
+  562  mv ex5 ex05
+  563  mv ex6 ex06
+  564  mv ex7 ex07
+  565  mv ex8 ex08
+  566  mv exo8 ex08
+  567  mv exo08 ex08
+  568  ls
+  569  mv exo09 ex09
+  570  mv exo10 ex10
+  571  ls
+  572  cd ..
+  573  tar zcvf aniss_louli_05-11-2019.tar.gz rendu
+  574  ls
+  575  rm aniss_louli_2019-11-05.tar.gz 
+  576  rm aniss_louli_05-11-2019.tar.gz 
+  577  ls
+  578  tar zcvf aniss_louli_2019-11-05.tar.gz rendu
+  579  ls
+  580  cd rendu/ex05
+  581  ls
+  582  nano test_curl.sh 
+  583  cd ..
+  584  rm aniss_louli_2019-11-05.tar.gz 
+  585  tar zcvf aniss_louli_2019-11-05.tar.gz rendu
+  586  ls
+  587  rm aniss_louli_2019-11-05.tar.gz 
+  588  cd rendu/ex10
+  589  nano mean_sum200.sh 
+  590  for i in {0..200};do echo $i;done | ./mean_sum200.sh
+  591  nano mean_sum200.sh 
+  592  for i in {0..200};do echo $i;done | ./mean_sum200.sh
+  593  nano mean_sum200.sh 
+  594  for i in {0..200};do echo $i;done | ./mean_sum200.sh
+  595  nano mean_sum200.sh 
+  596  for i in {0..200};do echo $i;done | ./mean_sum200.sh
+  597  cd ..
+  598  tar zcvf aniss_louli_2019-11-05.tar.gz rendu
+  599  ls
+  600  su
+  601  ssh-keygen 
+  602  ls
+  603  cd ~ssh
+  604  cd ~/.ssh
+  605* 
+  606  cat id_rsa.pub 
+  607  su
+  608  cd Documents/gits
+  609  git clone git@github.com:AnissLOULI/Test.git
+  610  git clone git@github.com:AnissLOULI/Test.git test2
+  611  ls
+  612  cd test2/
+  613  echo 'ccccc' >> fichier_a 
+  614  git diff
+  615  git commit -m '3eme'
+  616  git push
+  617  git pull
+  618  nano fichier_a 
+  619  git commit -m 'fix conflict'
+  620* 
+  621  git commit -m 'fix conflict'
+  622  nano fichier_a 
+  623  git add fichier_a 
+  624  git commit -m 'fix conflict'
+  625  git push
+  626  git add fichier_a 
+  627  git pull
+  628  git push
+  629  cd ~/.ssh
+  630  cd ~/Documents/gits/test2/
+  631  git clone git@github.com:AnissLOULI/Test.git
+  632  ls
+  633  git clone git@github.com:AnissLOULI/ipssi_2019.git
+  634  ls
+  635  nano README.md 
+  636  cd ipssi_2019/
+  637  ls
+  638  nano README.md 
+  639  cd ..
+  640  nano README.md 
+  641  cd ipssi_2019/
+  642  nano README.md 
+  643  git add README.md 
+  644  git commit -m 'maj readme'
+  645  git push README.md
+  646  git pull 
+  647  git push README.md
+  648  git status
+  649  git pull 
+  650  ls
+  651  cat README.md 
+  652  nano README.md 
+  653  git status
+  654  git add README.md 
+  655  git commit -m 'ajout readme'
+  656  git push 
+  657  cp -a ~/rendu ~/gits/test2/ipssi2019
+  658  cp -a ~/Documents/Test/rendu ~/gits/test2/ipssi2019
+  659  cd ..
+  660  ls
+  661  cd test/
+  662  ls
+  663  cp -a ~/Documents/test/rendu/ ~/Documents/gits/test2/ipssi_2019/
+  664  cd ..
+  665  cd gits/test2/ipssi_2019/
+  666  ls
+  667  git add rendu/
+  668  git commit -m 'Script 1ère semaine'
+  669  git push
+  670  history > histo_2019_11-06.txt
